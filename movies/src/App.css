@@ -1,0 +1,77 @@
+body {
+	background: skyblue;
+	color: #ffffff;
+}
+
+.movie-app > .row {
+	overflow-x: auto;
+	flex-wrap: nowrap;
+}
+
+.image-container {
+	position: relative;
+	transition: transform 0.2s;
+}
+
+.image-container img {
+	width: 20ex;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.tab-list {
+	border-bottom: 1px solid #ccc;
+	padding-left: 0;
+  }
+  
+  .tab-list-item {
+	display: inline-block;
+	list-style: none;
+	margin-bottom: -1px;
+	padding: 0.5rem 0.75rem;
+  }
+  
+  .tab-list-active {
+	background-color: white;
+	border: solid #ccc;
+	border-width: 1px 1px 0 1px;
+	color: #141414;
+  }
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.noDataStyle{
+	font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+.close{
+	color: #ccc;
+	text-align: center;
+	float: left;
+	opacity: 1;
+	font-weight: 100;
+	font-size: 1rem;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+.favbutton:hover {
+	font-weight: bold;
+}
